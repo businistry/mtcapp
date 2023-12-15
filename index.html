@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <title>Hotel Maintenance Task Manager</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Hotel Maintenance Task Manager</h1>
+    </div>
+    <div class="main-content">
+      <div class="task-list">
+        <h2>Tasks</h2>
+        <ul id="task-list">
+          <!-- Tasks will be added here dynamically -->
+        </ul>
+      </div>
+      <div class="task-form">
+        <h2>Add a Task</h2>
+        <form id="task-form">
+          <label for="task-name">Task Name:</label>
+          <input type="text" id="task-name" />
+          <br />
+          <label for="task-description">Task Description:</label>
+          <textarea id="task-description"></textarea>
+          <br />
+          <label for="task-priority">Task Priority:</label>
+          <select id="task-priority">
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+          </select>
+          <br />
+          <input type="submit" value="Add Task" />
+        </form>
+      </div>
+    </div>
+    <div class="footer">
+      <p>Developed by [Your Name]</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
